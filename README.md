@@ -17,7 +17,7 @@ Blogs, emails, captions, and creative copy — all in a clean, minimal AI worksp
 
 <br/>
 
-[🚀 Live Demo](https://your-vercel-url.vercel.app) &nbsp;•&nbsp;
+[🚀 Live Demo](https://ai-writing-assistant-livid.vercel.app/) &nbsp;•&nbsp;
 [📖 Docs](#-quick-start) &nbsp;•&nbsp;
 [🐛 Report Bug](https://github.com/fatima-muzafar/-AI-Writing-Assistant-/issues) &nbsp;•&nbsp;
 [✨ Request Feature](https://github.com/fatima-muzafar/-AI-Writing-Assistant-/issues)
