@@ -1,90 +1,116 @@
-# WriteAI – AI-Powered Writing Assistant
+<div align="center">
 
-> **Generate professional content instantly.** Write blogs, emails, captions, and creative copy with a clean, minimal AI workspace powered by state-of-the-art language models.
+# ✍️ WriteAI — AI-Powered Writing Assistant
 
-[![Vite](https://img.shields.io/badge/Vite-5.0+-646CFF?style=flat-square)](https://vitejs.dev)
-[![React](https://img.shields.io/badge/React-19.2+-61DAFB?style=flat-square)](https://react.dev)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.3+-06B6D4?style=flat-square)](https://tailwindcss.com)
-[![License](https://img.shields.io/badge/License-MIT-green? style=flat-square)](#license)
+**Generate professional content instantly.**  
+Blogs, emails, captions, and creative copy — all in a clean, minimal AI workspace.
+
+[![React](https://img.shields.io/badge/React-19.2+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-8.0+-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-4.3+-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![OpenRouter](https://img.shields.io/badge/OpenRouter-API-FF6B35?style=for-the-badge)](https://openrouter.ai)
+[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
+
+<br/>
+
+![Hero](./public/hero.png)
+
+<br/>
+
+[🚀 Live Demo](https://your-vercel-url.vercel.app) &nbsp;•&nbsp;
+[📖 Docs](#-quick-start) &nbsp;•&nbsp;
+[🐛 Report Bug](https://github.com/fatima-muzafar/-AI-Writing-Assistant-/issues) &nbsp;•&nbsp;
+[✨ Request Feature](https://github.com/fatima-muzafar/-AI-Writing-Assistant-/issues)
+
+</div>
 
 ---
 
-## 🎯 Overview
+## 📌 What is WriteAI?
 
-WriteAI is a modern, responsive web application that brings AI-powered writing assistance to your workflow. Whether you're drafting blog posts, composing professional emails, or creating social media content, WriteAI streamlines the creative process with:
-
-- **Full Conversation Threads** — Keep multi-turn chats organized in one place
-- **Real-Time Streaming** — Watch AI responses build word-by-word for faster feedback
-- **Smart History Management** — Search and retrieve past conversations with one click
-- **Workspace Customization** — Configure AI models, themes, and preferences on the fly
-- **Local-First Design** — All chat data stays on your device with browser storage
+WriteAI is a modern, **local-first** writing workspace powered by state-of-the-art language models via [OpenRouter](https://openrouter.ai). It gives you a distraction-free interface to draft, iterate, and refine content — without juggling browser tabs.
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### Core Functionality
-- 🤖 **AI Chat Interface** — Clean, distraction-free workspace for writing
-- 💬 **Chat Threading** — Multiple follow-up questions grouped in one continuous conversation
-- 📜 **Full History** — Persistent chat history with date, title, and message count
-- ⚡ **Streaming Responses** — See AI output word-by-word for better engagement
-- 🔄 **Continue or Restart** — Seamlessly continue past conversations or spawn new chats from existing prompts
+| Feature | Description |
+|---|---|
+| 🤖 **Multi-Model Support** | Switch between DeepSeek V3, GPT-4o-mini, and Claude 3.5 Haiku |
+| ⚡ **Real-Time Streaming** | Watch AI responses build word-by-word |
+| 💬 **Chat Threading** | Multi-turn conversations grouped in one place |
+| 📜 **Smart History** | Search and resume past sessions instantly |
+| 🎨 **Light / Dark Mode** | Toggle themes with one click |
+| 🔒 **Local-First Privacy** | All data stays in your browser — nothing is synced to a server |
+| 🔄 **Continue or Restart** | Resume any past conversation or spin up a fresh one |
 
-### Workspace Controls
-- 🎨 **Light/Dark Theme** — Toggle between light and dark modes instantly
-- 🤖 **Model Selection** — Choose from DeepSeek, GPT-4o-mini, or Claude 3.5 Haiku
-- 📊 **Streaming Toggle** — Enable/disable word-by-word output
-- 👤 **Custom Name** — Personalize your workspace
-- 🗑️ **Clear Workspace** — Reset all history and settings with one click
+---
 
-### Use Cases
-- **Blog Drafting** — Generate structured outlines and full article drafts
-- **Email Writing** — Craft professional emails tailored to your audience
-- **Social Media** — Create catchy hooks and engaging captions for LinkedIn, X, and Instagram
-- **General Writing** — Brainstorm ideas, fix grammar, rewrite content
+## 📸 Screenshots
+
+| | |
+|---|---|
+| ![Features](./public/feature.png) | ![Dashboard](./public/chat.png) |
+| **Landing Page** | **Chat Dashboard** |
+| ![History](./public/history.png) | ![Settings](./public/setting.png) |
+| **Conversation History** | **Settings Panel** |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Frontend** | React 19.2, Vite 8.0 |
+| **Styling** | TailwindCSS 4.3, Custom CSS Animations |
+| **State** | React Context API + LocalStorage |
+| **Routing** | React Router DOM v7 |
+| **Icons** | Lucide React |
+| **3D / Motion** | Spline, Framer Motion *(optional)* |
+| **AI API** | OpenRouter (DeepSeek, GPT-4o-mini, Claude 3.5) |
 
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js** 16.x or later
-- **npm** or **yarn** package manager
-- **OpenRouter API Key** (get one free at [openrouter.ai](https://openrouter.ai))
 
-### Installation
+- Node.js `16.x` or later
+- An [OpenRouter API Key](https://openrouter.ai) *(free tier available)*
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/fatima-muzafar/-AI-Writing-Assistant-.git
-   cd writeai
-   ```
+### 1. Clone & Install
 
-2. **Install dependencies**    
-   ```bash
-   npm install
-   ```
+```bash
+git clone https://github.com/fatima-muzafar/-AI-Writing-Assistant-.git
+cd -AI-Writing-Assistant-
+npm install
+```
 
-3. **Configure environment variables**
-   ```bash
-   cp .env.example .env.local
-   ```
-   Add your OpenRouter API key:
-   ```env
-   VITE_OPENROUTER_API_KEY=your_api_key_here
-   ```
+### 2. Configure Environment
 
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-   The app will open at `http://localhost:5173`
+```bash
+cp .env.example .env.local
+```
 
-5. **Build for production**
-   ```bash
-   npm run build
-   npm run preview
-   ```
+Open `.env.local` and add your key:
+
+```env
+VITE_OPENROUTER_API_KEY=sk_live_your_key_here
+```
+
+### 3. Run Locally
+
+```bash
+npm run dev
+# → http://localhost:5173
+```
+
+### 4. Build for Production
+
+```bash
+npm run build
+npm run preview
+```
 
 ---
 
@@ -93,286 +119,141 @@ WriteAI is a modern, responsive web application that brings AI-powered writing a
 ```
 src/
 ├── pages/
-│   ├── Home.jsx              # Landing page with features & pricing
-│   ├── Dashboard.jsx         # Main chat interface
-│   ├── History.jsx           # Conversation history viewer
-│   └── Settings.jsx          # Workspace configuration
+│   ├── Home.jsx          # Landing page
+│   ├── Dashboard.jsx     # Main chat interface
+│   ├── History.jsx       # Conversation history
+│   └── Settings.jsx      # User preferences
+│
 ├── features/
 │   └── ai-writer/
 │       ├── components/
-│       │   ├── Hero.jsx      # Home section hero
-│       │   ├── InputBox.jsx  # Chat input field
-│       │   ├── OutputBox.jsx # Message display
-│       │   └── ...
+│       │   ├── Hero.jsx       # Landing hero section
+│       │   ├── InputBox.jsx   # Chat input
+│       │   └── OutputBox.jsx  # Message display
 │       └── services/
-│           └── aiService.js  # OpenRouter API integration
+│           └── aiService.js   # OpenRouter integration
+│
 ├── components/
 │   ├── layout/
-│   │   └── Sidebar.jsx       # Navigation & recent history
-│   └── ui/
-│       └── ...               # Reusable UI components
+│   │   └── Sidebar.jsx        # Nav + recent history
+│   └── ui/                    # Reusable UI primitives
+│
 ├── contexts/
-│   └── SettingsContext.jsx   # Global settings state
-├── App.jsx                   # Main router & provider
-└── main.jsx                  # Entry point
-
-public/                        # Static assets
+│   └── SettingsContext.jsx    # Global settings
+│
+├── App.jsx                    # Router + providers
+└── main.jsx                   # Entry point
 ```
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technologies |
-|-------|---|
-| **Frontend** | React 19.2, Vite 8.0, TailwindCSS 4.3 |
-| **Styling** | Tailwind CSS, Custom CSS animations |
-| **State Management** | React Context API, Local Storage |
-| **Routing** | React Router DOM v7 |
-| **Icons** | Lucide React |
-| **3D (Optional)** | Spline, Framer Motion |
-| **API** | OpenRouter (DeepSeek, GPT-4o-mini, Claude 3.5) |
-| **Build Tool** | Vite with ESLint |
 
 ---
 
 ## ⚙️ Configuration
 
-### Environment Variables
+All in-app settings are stored in your browser's LocalStorage — no account needed.
 
-Create a `.env.local` file in the project root:
-
-```env
-VITE_OPENROUTER_API_KEY=sk_live_your_key_here
-```
-
-### Settings (In-App)
-
-All settings are stored locally in your browser:
-
-- **Profile Name** — How you appear in the workspace
-- **Preferred Model** — Default AI model for new chats (default: DeepSeek Chat)
-- **Response Streaming** — Enable/disable word-by-word output (default: enabled)
-- **Theme** — Light or dark mode (default: dark)
+| Setting | Default | Options |
+|---|---|---|
+| **AI Model** | DeepSeek Chat V3 | DeepSeek, GPT-4o-mini, Claude 3.5 Haiku |
+| **Streaming** | Enabled | On / Off |
+| **Theme** | Dark | Light / Dark |
+| **Display Name** | — | Any string |
 
 ---
 
-## 📖 Usage Guide
+## 🌐 Deployment
 
-### Starting a Chat
+### Vercel *(Recommended)*
 
-1. Click **"Launch Workspace"** or navigate to `/dashboard`
-2. Type your prompt in the input box
-3. Press `Enter` or click the send button
-4. Watch the AI response stream in real-time (if streaming is enabled)
-
-### Managing History
-
-- **View History** — Click "History" in the sidebar
-- **Continue Conversation** — Click "Continue Chat" on any history card
-- **New Chat from Thread** — Click to start fresh with the same initial prompt
-- **Delete Entry** — Hover over a card and click the trash icon
-
-### Changing Settings
-
-1. Click **"Settings"** in the sidebar
-2. Update your preferences:
-   - Display name
-   - Preferred AI model
-   - Streaming toggle
-   - Theme (light/dark)
-3. Changes apply instantly across the app
-
----
-
-## 🔌 API Integration
-
-### OpenRouter Setup
-
-1. Sign up at [openrouter.ai](https://openrouter.ai) (free tier available)
-2. Navigate to **API Keys** and create a new key
-3. Copy your API key to `.env.local`:
-   ```env
-   VITE_OPENROUTER_API_KEY=sk_live_...
+1. Push your repo to GitHub
+2. Import at [vercel.com/new](https://vercel.com/new)
+3. Add environment variable:
    ```
+   VITE_OPENROUTER_API_KEY = sk_live_...
+   ```
+4. Click **Deploy**
 
-### Supported Models
+### Netlify
 
-- **DeepSeek Chat (V3)** — Fast, creative, general-purpose [default]
-- **GPT-4o-mini** — Efficient OpenAI model
-- **Claude 3.5 Haiku** — Anthropic's compact model
-
-Switch models anytime in Settings without restarting the app.
-
-### Streaming Behavior
-
-When **Response Streaming** is enabled:
-- Tokens arrive and display one-by-one
-- Chat feels more responsive and interactive
-- Perfect for long-form content generation
-
-When disabled:
-- Waits for full response before displaying
-- Slightly faster for short completions
-
----
-
-## 🎨 Development
-
-### Running Locally
-
-```bash
-# Start dev server with HMR
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-
-# Run linter
-npm run lint
-```
-
-### Project Commands
-
-| Command | Purpose |
-|---------|---------|
-| `npm run dev` | Start Vite dev server |
-| `npm run build` | Build production bundle |
-| `npm run preview` | Serve built bundle locally |
-| `npm run lint` | Run ESLint checks |
-
-### Hot Module Replacement (HMR)
-
-The dev server supports HMR—changes to React components and styles reflect instantly without full page reloads.
-
----
-
-## 💾 Data & Privacy
-
-- **Local Storage** — All chat history and settings are stored in your browser's local storage
-- **No Cloud Sync** — Your data never leaves your device (unless you explicitly export)
-- **API Calls Only** — Only prompts are sent to OpenRouter for AI processing
-- **Clear All** — Delete all data anytime from Settings → "Clear All Data"
+1. Connect repo to [Netlify](https://netlify.com)
+2. Build command: `npm run build`
+3. Publish directory: `dist`
+4. Add the same environment variable → Deploy
 
 ---
 
 ## 🐛 Troubleshooting
 
-### API Key Not Working
-- Verify the key is correctly copied to `.env.local`
-- Ensure the key hasn't expired in your OpenRouter dashboard
-- Check your OpenRouter account has available credits
+<details>
+<summary><b>API key not working</b></summary>
 
-### Streaming Not Working
-- Confirm "Response Streaming" is enabled in Settings
+- Confirm the key is in `.env.local` (not `.env`)
+- Variable must start with `VITE_` to be exposed to the client
+- Check your [OpenRouter dashboard](https://openrouter.ai) for credit balance
+
+</details>
+
+<details>
+<summary><b>Streaming not working</b></summary>
+
+- Go to **Settings → Response Streaming → Enable**
 - Check browser console for API errors
-- Ensure your model supports streaming (all supported models do)
+- All supported models have streaming enabled by default
 
-### History Not Saving
-- Check browser's Local Storage is enabled
-- Clear browser cache if issues persist
-- History is specific to the browser/device you're using
+</details>
 
-### Build Errors
-- Delete `node_modules` and `package-lock.json`
-- Run `npm install` again
-- Ensure Node.js version is 16.x or higher
+<details>
+<summary><b>History not saving</b></summary>
 
----
+- Ensure your browser allows LocalStorage (not in incognito/private mode by default)
+- History is device-specific — it won't sync across browsers
 
-## 🚀 Deployment
+</details>
 
-### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Sign in to [Vercel](https://vercel.com)
-3. Import the repository
-4. Add environment variable:
-   ```
-   VITE_OPENROUTER_API_KEY = sk_live_...
-   ```
-5. Deploy!
-
-### Deploy to Netlify
-
-1. Connect your GitHub repo to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-4. Add environment variable in Netlify settings
-5. Deploy!
-
-### Self-Hosted
+<details>
+<summary><b>Build errors</b></summary>
 
 ```bash
+rm -rf node_modules package-lock.json
+npm install
 npm run build
-# Upload 'dist' folder to your server
 ```
 
----
+Ensure Node.js is `16.x` or higher: `node -v`
 
-## 📈 Performance
-
-- **Vite Bundling** — Fast cold start and HMR
-- **Code Splitting** — Lazy-loaded routes for optimal loading
-- **Streaming** — Progressive rendering for large responses
-- **Memoization** — React.memo on heavy components
-
-Typical metrics:
-- **First Load** — <2s (with cache)
-- **TTI** — <3s
-- **LCP** — <2.5s
+</details>
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! To get started:
+Contributions are welcome.
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+```bash
+# 1. Fork the repo
+# 2. Create your branch
+git checkout -b feature/your-feature-name
+
+# 3. Commit your changes
+git commit -m "feat: add your feature"
+
+# 4. Push and open a PR
+git push origin feature/your-feature-name
+```
+
+Please open an issue first for major changes.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — feel free to use it in personal or commercial projects. See the [LICENSE](LICENSE) file for details.
+MIT — free for personal and commercial use. See [LICENSE](LICENSE).
 
 ---
 
-## 🔗 Resources
+<div align="center">
 
-- [React Documentation](https://react.dev)
-- [Vite Guide](https://vitejs.dev)
-- [TailwindCSS Docs](https://tailwindcss.com)
-- [OpenRouter API](https://openrouter.ai/docs)
-- [React Router](https://reactrouter.com)
+**Built by [Fatima Muzafar](https://github.com/fatima-muzafar)**
 
----
+*If this project helped you, consider leaving a ⭐*
 
-## 📬 Support
-
-Have questions or found a bug? 
-
-- 📧 **Email**: support@writeai.example (replace with your email)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/writeai/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/writeai/discussions)
-
----
-
-## 🎉 Acknowledgments
-
-- **OpenRouter** — For providing seamless AI model access
-- **React & Vite** — For a fast, modern development experience
-- **TailwindCSS** — For utility-first styling
-- **Lucide Icons** — For beautiful, simple icons
-
----
-
-**Built with ❤️ by [Fatima Muzafar Ali]**  
-*Last updated: January 2025*
+</div>
