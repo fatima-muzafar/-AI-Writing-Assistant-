@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # ✍️ WriteAI — AI-Powered Writing Assistant
 
@@ -257,3 +257,4 @@ MIT — free for personal and commercial use. See [LICENSE](LICENSE).
 *If this project helped you, consider leaving a ⭐*
 
 </div>
+
